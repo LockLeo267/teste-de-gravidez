@@ -4,6 +4,274 @@
     box-sizing: border-box;
 }
 
-h1 {
-    border: 1px solid red;
+body {
+    height: auto;
 }
+
+.mob {
+    display: none;
+}
+
+.responsive {
+    display: none;
+}
+
+.pc {
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arroz {
+    width: 20%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.image {
+    height: 13vh;
+    width: 20vh;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+nav {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    height: 13vh;
+}
+
+.org {
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.org h5 {
+    color: #8E56E0;
+}
+
+.org a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.org a:hover{
+    color: #8E56E0;
+}
+
+.pesqui {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+    .pesqui input {
+        width: 85%;
+        height: 5vh;
+        border-radius: 20px;
+        border-right: none;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        background-color: #E0D2F6;
+        text-align: center;
+    }
+    ::placeholder {
+        color: black;
+        padding-left: 10px;
+        text-align: start;
+    }
+.pesqui .btnpesq {
+    width: 15%;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    border-left: 1px solid black;
+    height: 5vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0D2F6;
+}
+
+
+.carousel {
+    height: 87vh;
+    z-index: 9;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 87vh;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    body {
+    height: 150vh;
+    }
+
+    .mob {
+        display: flex;
+    }
+    
+    header {
+        height: 15vh;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .control-divs {
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .control-divs div {
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .logozita a img{
+        width: 80px;
+    }
+    
+    .control-divs img {
+        width: 40px;
+    }
+    
+    .pesqui {
+        height: 7vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .pesqui input {
+        width: 65%;
+        height: 3.5vh;
+        border-radius: 20px;
+        border-right: none;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        background-color: #E0D2F6;
+        text-align: center;
+    }
+    ::placeholder {
+        color: black;
+        padding-left: 10px;
+        text-align: start;
+    }
+    .pesqui .btnpesq {
+    width: 15%;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    border-left: 1px solid black;
+    height: 3.5vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0D2F6;
+    }
+    
+    .responsive{
+        display: none;
+        position: absolute;
+        background-color: white;
+        height: 100%;
+        width: 40%;
+        flex-direction: column;
+        background-color: #8E56E0;
+        z-index: 10;
+        position: fixed;
+
+    }
+    
+    .responsive-img {
+        height: 10vh;
+        border-bottom: 2px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .responsive-img img {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .responsive-text {
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 23px;
+        gap: 20px;
+    }
+    
+    .responsive-text a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .pc {
+        display: none;
+    }
+    }
